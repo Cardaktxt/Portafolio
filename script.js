@@ -1,5 +1,6 @@
 const theme = window.matchMedia("(prefers-color-scheme: dark)");
 const icons = document.getElementsByClassName("icon");
+const contenedor = document.getElementsByClassName("contenedor");
 const lenguajes = document.getElementsByClassName("lenguaje");
 
 function ThemeColor(theme) {
@@ -8,11 +9,13 @@ function ThemeColor(theme) {
     document.body.classList.add("dark");
     AsignarClase(icons, "dark");
     AsignarClase(lenguajes, "dark-lenguajes");
+    AsignarClase(contenedor, "dark");
   } else {
     console.log("Theme Light");
     document.body.classList.remove("dark");
     RemoverClase(iconos, "dark");
     RemoverClase(lenguajes, "dark-lenguajes");
+    RemoverClase(contenedor, "dark");
   }
 }
 
@@ -28,4 +31,4 @@ function RemoverClase(objetos, clase) {
 }
 
 ThemeColor(theme);
-theme.addEventListener("change", () => ThemeColor(theme));
+theme.addEventListener("change", ThemeColor(theme));

@@ -6,8 +6,8 @@
 }
 
 :root {
-  --df: 10px;
-  --ex: 1px;
+  --df: 50px;
+  --ex: -15px;
 }
 
 @keyframes sombraRgb {
@@ -49,7 +49,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #181818;
+  background-color: white;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0px 0px 15px #000000ab;
@@ -110,7 +110,9 @@ body {
   padding: 5px 10px;
   width: min-content;
   place-content: center;
+  color: white;
   border: 1px solid black;
+  background-color: black;
   border-radius: 10px;
   transition: 0.3s;
 }
