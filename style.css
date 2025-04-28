@@ -41,8 +41,10 @@ body {
   align-items: center;
   justify-content: center;
   font-family: Montserrat;
-  height: 100vh;
   font-size: 1rem;
+  margin: 50px auto;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .contenedor {
@@ -139,6 +141,19 @@ body {
 .dark-lenguajes {
   color: black;
   background-color: white;
+}
+
+.proyectos{
+  flex-direction: column;
+  width: 750px;
+  margin-bottom: 50px;
+}
+
+.descripcion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 @media (max-width: 870px) {

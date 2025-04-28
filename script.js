@@ -2,6 +2,7 @@ const theme = window.matchMedia("(prefers-color-scheme: dark)");
 const icons = document.getElementsByClassName("icon");
 const contenedor = document.getElementsByClassName("contenedor");
 const lenguajes = document.getElementsByClassName("lenguaje");
+const artesaland = document.getElementById("artesaland");
 
 function ThemeColor(theme) {
   if (theme.matches) {
@@ -30,5 +31,8 @@ function RemoverClase(objetos, clase) {
   }
 }
 
+artesaland.addEventListener("click", function () {
+  window.location.href = "https://artesaland.netlify.app";
+});
 ThemeColor(theme);
 theme.addEventListener("change", ThemeColor(theme));
